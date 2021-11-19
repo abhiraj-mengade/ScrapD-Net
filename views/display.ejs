@@ -1,0 +1,17 @@
+<%- include('header'); -%>
+<h1>Display</h1>
+<div class="container-fluid">
+    <% cards.forEach(function(card) { %>
+        <strong><%= card.title %></strong>
+        <h4><%= card.author %></h4>
+        <p><%= card.abs %></p>
+        <h4><%= card.stars %></h4>
+        <h4><%= card.starsa %></h4>
+        
+    <% }); %>
+</div>
+<!-- <% for(var i=0; i<cards.length; i++) {%>
+    <p><%= cards[i]%></p>
+<% } %> -->
+
+<%- include('footer'); -%>

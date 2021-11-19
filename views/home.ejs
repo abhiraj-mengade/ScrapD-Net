@@ -1,0 +1,15 @@
+<%- include('header'); -%>
+<title>Scrappy!</title>
+<h1>Scrappy!</h1>
+<h3>The scraping website.</h3>
+<div class="container">
+    <h1>Input URL:</h1>
+    <form action="/" method="POST">
+      <div class="form-group">
+        <label for="url">URL</label>
+        <input type="url" class="form-control" id="url"  name="url" placeholder="Enter URL">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    
+<%- include('footer'); -%>

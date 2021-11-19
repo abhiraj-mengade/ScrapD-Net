@@ -1,15 +1,28 @@
 <%- include('header'); -%>
 <h1>Display</h1>
+
 <div class="container-fluid">
+<div class = "row">
     <% cards.forEach(function(card) { %>
-        <strong><%= card.title %></strong>
-        <h4><%= card.author %></h4>
-        <p><%= card.abs %></p>
-        <h4><%= card.stars %></h4>
-        <h4><%= card.starsa %></h4>
+     <div class ="col-sm-4">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src=<%= card.image %> alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title"><%= card.title %></h5>
+              <h6 class="card-title"><%= card.author %></h4>
+              <p class="card-text"><%= card.abs %></p>
+              <h7 class="card-title"><%= card.stars %></h4>
+              <h7 class="card-title"><%= card.starsa %></h4>
+            </div>
+        </div>
+      </div>
         
     <% }); %>
 </div>
+</div>
+<a href="/">
+    <button>Homepage</button>
+ </a>
 <!-- <% for(var i=0; i<cards.length; i++) {%>
     <p><%= cards[i]%></p>
 <% } %> -->

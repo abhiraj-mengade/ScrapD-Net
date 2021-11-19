@@ -7,10 +7,10 @@ const bodyParser = require("body-parser");
 let url = "";
 const app = express();
 app.set('view engine', 'ejs'); 
-
+app.use(express.static('public'));
 
 app.use(express.urlencoded({extended: true}));
-app.use(express.static("public"));
+
 
 app.get("/", function(req, res) {  
     res.render("home");
@@ -28,19 +28,20 @@ async function fetch(url){
 await axios.get(url)
     .then(res => {
         const $ = cheerio.load(res.data);
-        $('.item-col').each((i,e)=>{
+        $('.paper-card').each((i,e)=>{
           var x = {};
-          const title = $(e).find('h1').text().replace(/\s\s+/g,'');
-          x.title=title;
-          const author = $(e).find('.author-section').text().replace(/\s\s+/g,'');
-          x.author=author;
-          const stars = $(e).find('.entity-stars').text().replace(/\s\s+/g,'');
-          x.stars=stars;
-          const abs = $(e).find('.item-strip-abstract').text().replace(/\s\s+/g,'');
-          x.abs=abs;
-          const starsa = $(e).find('.stars-accumulated').text().replace(/\s\s+/g,'');
-          x.starsa=starsa;
+          x.title = $(e).find('h1').text().replace(/\s\s+/g,'');
+      
+          x.author = $(e).find('.author-section').text().replace(/\s\s+/g,'');
+      
+          x.stars = $(e).find('.entity-stars').text().replace(/\s\s+/g,'');
+        
+          x.abs = $(e).find('.item-strip-abstract').text().replace(/\s\s+/g,'');
+      
+          x.starsa = $(e).find('.stars-accumulated').text().replace(/\s\s+/g,'');
 
+          x.image = $(e).find('.item-image').attr('style').replace(/\s\s+/g,'').replace("background-image: url('",'').replace("');",'');
+          
           cards.push(x);
         })
         console.log(cards[0]);

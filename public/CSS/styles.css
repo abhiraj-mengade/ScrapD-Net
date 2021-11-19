@@ -1,6 +1,32 @@
 body{
-background-color: #71DFE7;  
+    padding: 5%;
+}
+button{
+    background-color:rgb(24, 26, 27);
+    margin: 2% !important;
+    padding: 0% !important;
 }
 h1{
-    color:aquamarine;
+    color: beige;
+    font-family: 'Praise', cursive;
+    
+}
+h2{
+    color: cornsilk;
+}
+
+p{
+    color: black;
+}
+
+.input{
+padding: 5%;
+}
+
+.heading{
+    padding:5%;
+
+}
+.card{
+    margin:1%;
 }

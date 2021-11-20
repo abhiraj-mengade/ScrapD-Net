@@ -31,8 +31,10 @@ await axios.get(url)
         $('.paper-card').each((i,e)=>{
           var x = {};
           x.title = $(e).find('h1').text().replace(/\s\s+/g,'');
+          x.url= "https://paperswithcode.com" + $(e).find('a').attr('href').replace(/\s\s+/g,'');
       
           x.author = $(e).find('.author-section').text().replace(/\s\s+/g,'');
+          x.git = $(e).find('.author-section').find('a').attr("href").replace(/\s\s+/g,'');
       
           x.stars = $(e).find('.entity-stars').text().replace(/\s\s+/g,'');
         

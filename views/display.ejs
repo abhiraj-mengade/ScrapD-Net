@@ -1,5 +1,8 @@
 <%- include('header'); -%>
-<h1>Display</h1>
+<h2>Display</h2>
+<a href="/">
+  <button class="btn" type="submit"><i class="fa fa-chevron-circle-left" style="color:red;font-size:60px;"></i></button>
+</a>
 
 <div class="container-fluid">
 <div class = "row">
@@ -8,11 +11,12 @@
         <div class="card" style="width: 18rem;">
             <img class="card-img-top" src=<%= card.image %> alt="Card image cap">
             <div class="card-body">
-              <h5 class="card-title"><%= card.title %></h5>
-              <h6 class="card-title"><%= card.author %></h4>
-              <p class="card-text"><%= card.abs %></p>
-              <h7 class="card-title"><%= card.stars %></h4>
-              <h7 class="card-title"><%= card.starsa %></h4>
+              <h5 class="title card-title"><a id="url" href=<%= card.url %>><%= card.title %></a></h5>
+              <h6 class="card-title"><p class="author-name"><a id="git-url" href=<%= card.git %>><%= card.author %></a></p></h4>
+              <p class=" abs card-text"><%= card.abs %></p>
+              <h7 class="card-title"><i class="fa fa-star" style="color: #FFD700"></i> <p class="stars"><%= card.stars %></p></h4>
+              <br>
+              <h7 class="card-title"><p class="starsa"><%= card.starsa %></p></h4>
             </div>
         </div>
       </div>
@@ -20,8 +24,6 @@
     <% }); %>
 </div>
 </div>
-<a href="/">
-    <button>Homepage</button>
- </a>
+
 
 <%- include('footer'); -%>

@@ -1,18 +1,21 @@
 body{
-    padding: 5%;
+    padding: 4%;
 }
 button{
     background-color:rgb(24, 26, 27);
     margin: 2% !important;
     padding: 0% !important;
+    
 }
 h1{
     color: beige;
+    font-size: 6rem !important;
     font-family: 'Praise', cursive;
     
 }
 h2{
     color: cornsilk;
+    font-family:'Times New Roman', Times, serif
 }
 
 p{
@@ -22,11 +25,56 @@ p{
 .input{
 padding: 5%;
 }
-
+.gg{
+    color:red;
+    font-size:4rem !important;
+}
+.gg:hover{
+    color: #DC143C !important;
+}
 .heading{
-    padding:5%;
+    padding:3%;
 
 }
 .card{
     margin:1%;
+}
+input{
+    width: 70% !important;
+    margin:auto !important;
+}
+.input-box{
+text-align: center;
+}
+
+#url {
+    font-family: 'EB Garamond', serif;
+    color:#4C5270 !important;
+}
+
+#git-url{
+    color:crimson;
+}
+.author-name{
+    font-family: 'EB Garamond', serif !important;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.stars{
+font-family: 'Praise', cursive !important;
+font-size: 1.2rem;
+    
+}
+.starsa{
+    font-family: 'Praise', cursive !important;
+    font-size: 1.2rem;
+        
+    }
+.abs{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: italic;
+    color:#3F3351;
 }

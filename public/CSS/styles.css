@@ -78,3 +78,7 @@ font-size: 1.2rem;
     font-style: italic;
     color:#3F3351;
 }
+.card{
+    display: flex !important;
+    border-radius:1rem;
+}

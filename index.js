@@ -22,6 +22,9 @@ app.post('/', async (req, res) => {
     res.render("display",{cards:cardspack});
 });
 
+
+//Function to fetch the cards from the url
+
 async function fetch(url){
   const cards=[];  
 

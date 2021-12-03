@@ -5,22 +5,30 @@
 Scrap D'Net is a webisite which scraps off posts from the website - *www.paperswithcode.com* and displays it in the form of cards.
 <br>
 
+### Video Demo Link:
+
+<a href="https://vimeo.com/652967758">Click here!</a>
+
+
 #### ***The website is even depolyed on Heroku and it can be accessed from here***
-<a href="">Heroku link</a>
+<a href="https://scrap-dnet.herokuapp.com/">Heroku link</a>
 ### How to use:
 - Clone the repo 
 - Install dependencies by running `npm i` in the terminal
 - The site will be live at `https://localhost:3000`
 
-
 <br>
-The website used for scraping is a famous website in the field of ML/Ai research as it updates people on current important research papers and developements in the field of ML/Ai.
 
 ### Tech used:
 - *Node.js and it's basic libraries to setup a server.*
 - *Cheerio.js library for web-scraping*
 - *Axios for requesting data from urls.*
 - *Bootstrap & CSS for designing.*
+
+<br>
+
+The website used for scraping is a famous website in the field of ML/Ai research as it updates people on current important research papers and developements in the field of ML/Ai.
+
 
 ### Screenshots:
 1. Main Page <br><br>
@@ -37,4 +45,4 @@ The website used for scraping is a famous website in the field of ML/Ai research
 - run index.js
 
 ### References: 
-- 
+- https://www.freecodecamp.org/news/how-to-scrape-websites-with-node-js-and-cheerio/
